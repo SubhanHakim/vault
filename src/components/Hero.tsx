@@ -78,7 +78,7 @@ const Hero = () => {
 
                     <div className="flex items-center gap-6">
                         <motion.a
-                            href="#"
+                            href="https://pump.fun/coin/434GuMTekhPpzQTH5egU9obA84Lo9PWGcX1T1wr4pump"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(212, 197, 169)" }}
