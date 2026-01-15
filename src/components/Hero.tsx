@@ -78,7 +78,7 @@ const Hero = () => {
 
                     <div className="flex items-center gap-6">
                         <motion.a
-                            href="https://dexscreener.com/"
+                            href="#"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(212, 197, 169)" }}
@@ -99,7 +99,7 @@ const Hero = () => {
                         </motion.a>
 
                         <motion.a
-                            href="https://x.com/vault_coin"
+                            href="https://x.com/i/communities/2011819279294124433"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(212, 197, 169)" }}
