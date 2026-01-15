@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import guardian from '../assets/guardian.jpg';
+import xLogo from '../assets/icons8-x-50.png';
+import dexLogo from '../assets/dex.png';
 
 const Hero = () => {
     return (
@@ -66,13 +68,57 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.5, delay: 1.2 }}
-                    className="flex flex-col items-center gap-4"
+                    className="flex flex-col items-center gap-8"
                 >
                     <p className="text-vault-gold font-sans tracking-widest text-xs md:text-sm max-w-xl mx-auto leading-relaxed uppercase border-t border-b border-vault-gold/10 py-4 px-8">
                         The Keeper of the Immutable Ledger.
                         <br />
                         Silence is the language of the code.
                     </p>
+
+                    <div className="flex items-center gap-6">
+                        <motion.a
+                            href="https://dexscreener.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(212, 197, 169)" }}
+                            whileTap={{ scale: 0.95 }}
+                            className="group relative p-4 overflow-hidden rounded-full bg-vault-black/30 backdrop-blur-sm border border-vault-gold/20 hover:border-vault-gold transition-colors duration-500"
+                        >
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-vault-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+
+                            {/* Shimmer Effect */}
+                            <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-vault-gold/20 to-transparent group-hover:left-[100%] transition-all duration-1000 ease-in-out" />
+
+                            <img
+                                src={dexLogo}
+                                alt="Dexscreener"
+                                className="w-6 h-6 object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 relative z-10"
+                            />
+                        </motion.a>
+
+                        <motion.a
+                            href="https://x.com/vault_coin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(212, 197, 169)" }}
+                            whileTap={{ scale: 0.95 }}
+                            className="group relative p-4 overflow-hidden rounded-full bg-vault-black/30 backdrop-blur-sm border border-vault-gold/20 hover:border-vault-gold transition-colors duration-500"
+                        >
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-vault-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+
+                            {/* Shimmer Effect */}
+                            <div className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-vault-gold/20 to-transparent group-hover:left-[100%] transition-all duration-1000 ease-in-out" />
+
+                            <img
+                                src={xLogo}
+                                alt="X Protocol"
+                                className="w-6 h-6 object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 relative z-10"
+                            />
+                        </motion.a>
+                    </div>
                 </motion.div>
             </div>
 
